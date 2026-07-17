@@ -120,7 +120,7 @@ CREATE TABLE "company_departement" (
   "id" BIGINT PRIMARY KEY NOT NULL,
   "company_id" BIGINT NOT NULL,
   "name" TEXT NOT NULL,
-  "head_of_departement" BIGINT NOT NULL,
+  "head_of_departement" BIGINT,
   "created_at" TIMESTAMPTZ NOT NULL DEFAULT (CURRENT_TIMESTAMP),
   "created_by" BIGINT NOT NULL,
   "updated_at" TIMESTAMPTZ NOT NULL DEFAULT (CURRENT_TIMESTAMP),
@@ -426,7 +426,7 @@ COMMENT ON COLUMN "session"."deleted_by" IS 'User who soft deleted this data';
 
 COMMENT ON COLUMN "session"."expired_at" IS 'The timestamp when this session will expire';
 
-ALTER TABLE "company_branch" ADD FOREIGN KEY ("id") REFERENCES "company" ("id") DEFERRABLE INITIALLY IMMEDIATE;
+ALTER TABLE "company_branch" ADD FOREIGN KEY ("company_id") REFERENCES "company" ("id") DEFERRABLE INITIALLY IMMEDIATE;
 
 ALTER TABLE "company_role" ADD FOREIGN KEY ("company_id") REFERENCES "company" ("id") DEFERRABLE INITIALLY IMMEDIATE;
 
