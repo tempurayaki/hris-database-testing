@@ -89,7 +89,7 @@ Example scenarios:
 
 Detailed test cases are maintained using Google Sheets:
 
-- Schema Validation Test Cases: [Google Sheets Link]((https://docs.google.com/spreadsheets/d/15of4X3xkE0gPsZaSBdg_DAv5-cBZNQAY8OGLgC86u4E/edit?gid=712644849#gid=712644849))
+- Schema Validation Test Cases: [Google Sheets Link](https://docs.google.com/spreadsheets/d/15of4X3xkE0gPsZaSBdg_DAv5-cBZNQAY8OGLgC86u4E/edit?gid=712644849#gid=712644849)
 - Business Validation Test Cases: [Google Sheets Link](https://docs.google.com/spreadsheets/d/15of4X3xkE0gPsZaSBdg_DAv5-cBZNQAY8OGLgC86u4E/edit?gid=694838116#gid=694838116)
 
 Each test case contains:
