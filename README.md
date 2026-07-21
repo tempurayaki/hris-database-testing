@@ -108,6 +108,7 @@ Each test case contains:
 ---
 
 # Project Structure
+```text
 hris-database-testing/
 │
 ├── docker/
@@ -125,6 +126,7 @@ hris-database-testing/
 │ └── screenshots/
 │
 └── README.md
+```
 
 ---
 
